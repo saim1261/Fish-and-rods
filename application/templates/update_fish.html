@@ -1,0 +1,12 @@
+{% extends 'layout.html'}
+{% block body %}
+<br><br>
+Original Fish: {{ form.fish_name }}
+<br><br>
+<form action='' method='POST'>
+    {{ form.hidden_tag() }}
+    {{ form.fish.label }} {{ form.fish_name }} <br>
+    {{ form.submit }}
+</form>
+
+{% endblock body %}
