@@ -1,5 +1,5 @@
 {% extends 'layout.html' %}
-%block body %}
+{%block body %}
 <h2>Tasks that have been completed</h2>
 {% for task in all_tasks %}
  {% if task.completed == True %}
@@ -7,10 +7,10 @@
    <br>
    {{ task.date_created }}
    <br>
-   <form action="{{ url_for('update', id=task.id) }}">
+   <form action="{{ url_for('update_rod',)}}">
      <input type=submit value="Update">
    </form>
-   <form action="{{ url_for('delete', id=task.id) }}">
+   <form action="{{ url_for('delete_rod')}}">
     <input type=submit value="Delete">
    </form>
    <br>

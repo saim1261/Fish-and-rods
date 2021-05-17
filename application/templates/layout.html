@@ -2,8 +2,9 @@
     <head>
         <title>Fishing guide</title>
         <body>
-            <a href="{{ url_for('Home')}}">Home</a>
-            <a href="{{url_for('Create')}}">Create</a>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('add_rod') }}">Add a Rod</a>
+            <a href="{{ url_for('add_fish') }}">Add Fish</a>
             {% block body %}
             {%endblock body%}
         </body>
