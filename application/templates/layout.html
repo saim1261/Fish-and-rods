@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>Fishing guide</title>
+        <body>
+            <a href="{{ url_for('Home')}}">Home</a>
+            <a href="{{url_for('Create')}}">Create</a>
+            {% block body %}
+            {%endblock body%}
+        </body>
+    </head>
+</html>
